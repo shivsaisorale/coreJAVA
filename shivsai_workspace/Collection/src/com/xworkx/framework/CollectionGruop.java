@@ -124,7 +124,7 @@ public class CollectionGruop {
 		Iterator<String> it77 = collection.iterator();
 		while (it77.hasNext()) {
 			System.out.println(it77.next());
-
+		}
 			boolean check1 = collection.remove(festival59);
 			System.out.println(check1);
 
@@ -136,7 +136,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection2 = new ArrayList<String>();
 		collection2.add("Punneth");
@@ -201,19 +201,19 @@ public class CollectionGruop {
 		Iterator<String> itr = collection2.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
+		}
+			boolean check22 = collection2.remove("Chiru");
+			System.out.println(check22);
 
-			boolean check1 = collection2.remove("Chiru");
-			System.out.println(check1);
+			boolean checkout22 = collection2.contains("Yash");
+			System.out.println(checkout22);
 
-			boolean checkout1 = collection2.contains("Yash");
-			System.out.println(checkout1);
-
-			boolean contained1 = collection2.isEmpty();
-			System.out.println(contained1);
+			boolean contained22 = collection2.isEmpty();
+			System.out.println(contained22);
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection3 = new ArrayList<String>();
 		collection3.add("Kannada");
@@ -282,7 +282,7 @@ public class CollectionGruop {
 		Iterator<String> it2 = collection3.iterator();
 		while (it2.hasNext()) {
 			System.out.println(it2.next());
-
+		}
 			boolean check2 = collection3.remove("sindu");
 			System.out.println(check2);
 
@@ -294,7 +294,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection4 = new ArrayList<String>();
 		collection4.add("AAke");
@@ -363,7 +363,7 @@ public class CollectionGruop {
 		Iterator<String> it4 = collection4.iterator();
 		while (it4.hasNext()) {
 			System.out.println(it4.next());
-
+		}
 			boolean check3 = collection4.remove("Kaadal");
 			System.out.println(check3);
 
@@ -375,7 +375,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection5 = new ArrayList<String>();
 		collection5.add("Money Heist");
@@ -444,7 +444,7 @@ public class CollectionGruop {
 		Iterator<String> it7 = collection5.iterator();
 		while (it7.hasNext()) {
 			System.out.println(it7.next());
-
+		}
 			boolean check5 = collection5.remove("Money Heist");
 			System.out.println(check5);
 
@@ -456,7 +456,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection6 = new ArrayList<String>();
 		collection6.add("Bidar");
@@ -525,7 +525,7 @@ public class CollectionGruop {
 		Iterator<String> it66 = collection6.iterator();
 		while (it66.hasNext()) {
 			System.out.println(it66.next());
-
+		}
 			boolean check6 = collection6.remove("kur");
 			System.out.println(check6);
 
@@ -537,7 +537,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection7 = new ArrayList<String>();
 		collection7.add("Arisa Pitha");
@@ -606,7 +606,7 @@ public class CollectionGruop {
 		Iterator<String> it9 = collection.iterator();
 		while (it9.hasNext()) {
 			System.out.println(it9.next());
-
+		}
 			boolean check7 = collection7.remove("Chikki");
 			System.out.println(check7);
 
@@ -618,7 +618,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection8 = new ArrayList<String>();
 		collection8.add("Hero Hounda");
@@ -687,7 +687,7 @@ public class CollectionGruop {
 		Iterator<String> it32 = collection8.iterator();
 		while (it32.hasNext()) {
 			System.out.println(it32.next());
-
+		}
 			boolean check9 = collection8.remove(collection8);
 			System.out.println(check9);
 
@@ -699,7 +699,7 @@ public class CollectionGruop {
 
 			collection.clear();
 			System.out.println("After clearing");
-		}
+		
 
 		Collection<String> collection9 = new ArrayList<String>();
 		collection9.add("Micro");
