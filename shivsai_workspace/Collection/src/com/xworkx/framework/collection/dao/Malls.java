@@ -43,3 +43,4 @@ public class Malls {
 	}
 
 }
+//(b1 b2 ) compre to 
