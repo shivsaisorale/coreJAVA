@@ -35,7 +35,7 @@ public class AirQualityIndex {
 				Verypoor1, Verypoor2, Verypoor3, Verypoor4, Verypoor5);
 		List<Integer> ref = stream.filter((e) -> e < 200).collect(Collectors.toList());
 		ref.forEach(e -> System.out.println("air quality index:" + e));
-		System.err.println("--------------------------");
+		System.err.println("=============================");
 		System.out.println("descending order");
 
 		Stream<Integer> stream2= Stream.of(good1, good2, good3, good4, good4, good5, satisfactory,
