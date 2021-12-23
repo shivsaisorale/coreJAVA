@@ -1,6 +1,7 @@
 package com.xworkx.framework.collection.stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -40,7 +41,17 @@ public class PresidentDTOScammer {
 		while (itr.hasNext()) {
 			PresidentDTO element = itr.next();
 			System.out.println(element);
-
+			
+		Comparator<PresidentDTO> comparator = (e1,e2)->{
+			int e1Tenure=e1.getId();
+			int e1Tenure=e2.getId();
+			if (e1Tenure=e2Tenure)return 0;
+			if (e1Tenure<e2Tenure)return 1000;
+			if (e1Tenure=e2Tenure)return -100;
+			return 0;
+			
+		};
+		
 		}
 
 	}

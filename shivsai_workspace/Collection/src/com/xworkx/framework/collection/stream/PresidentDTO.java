@@ -2,16 +2,16 @@ package com.xworkx.framework.collection.stream;
 
 public class PresidentDTO {
 
-	private String id;
+	private int id;
 	private String name;
 	private String countryName;
-	private String tenure;
+	private int tenure;
 
 	public PresidentDTO() {
 		System.out.println("invoked no-arg const");
 	}
 
-	public PresidentDTO(String id, String name, String countryName, String tenure) {
+	public PresidentDTO(int id, String name, String countryName, int tenure) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -25,11 +25,11 @@ public class PresidentDTO {
 				+ "]";
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -49,11 +49,11 @@ public class PresidentDTO {
 		this.countryName = countryName;
 	}
 
-	public String getTenure() {
+	public int getTenure() {
 		return tenure;
 	}
 
-	public void setTenure(String tenure) {
+	public void setTenure(int tenure) {
 		this.tenure = tenure;
 	}
 
