@@ -2,11 +2,11 @@ package com.xworkz.exam;
 
 public class Actor {
 
-	String name;
-	char gender;
-	int age ;
-	boolean marrige;
-	String lang;
+	private String name;
+	private char gender;
+	private int age ;
+	private boolean marrige;
+	private String lang;
 	
 	public Actor(String name, char gender, int age, boolean marrige, String lang) {
 		super();

@@ -2,10 +2,10 @@ package com.xworkz.exam;
 
 public class State {
 
-	String name; 
-	int noOfdist;
-	int noOfcitys;
-	String CMname;
+	private String name; 
+	private int noOfdist;
+	private int noOfcitys;
+	private String CMname;
 	
 	public State(String name, int noOfdist, int noOfcitys, String cMname) {
 		super();
@@ -41,7 +41,7 @@ public class State {
 
 	@Override
 	public String toString() {
-		return "State [name=" + name + ", noOfstate=" + noOfdist + ", noOfcitys=" + noOfcitys + ", CMname=" + CMname
+	return "State [name=" + name + ", noOfstate=" + noOfdist + ", noOfcitys=" + noOfcitys + ", CMname=" + CMname
 				+ "]";
 	}
 
