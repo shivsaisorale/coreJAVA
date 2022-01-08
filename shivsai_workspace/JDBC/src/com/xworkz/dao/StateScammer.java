@@ -13,6 +13,9 @@ public class StateScammer {
 
 		StateDAO stateDAO = new StateDAO();
 		stateDAO.save(stateDTO1);
+		stateDAO.save(stateDTO2);
+		stateDAO.save(stateDTO3);
+		stateDAO.save(stateDTO4);
 
 		boolean delete = stateDAO.deleteById(3);
 		System.out.println(delete);

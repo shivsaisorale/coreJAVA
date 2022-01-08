@@ -7,6 +7,7 @@ public class CameraDTO {
 	private String pixel;
 	private float cost;
 	private float weight;
+	public int length;
 	
 	public CameraDTO() {
 		System.out.println("no argument constructor invoked");
