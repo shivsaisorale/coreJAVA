@@ -28,4 +28,88 @@ public class CityDAOimpl implements CityDAO {
 		}
 		sessionfactory.close();
 	}
+
+	@Override
+	public CityEntity getById(int id) {
+		CityEntity entity = null;
+		System.out.println("invoked getid dao method ");
+		System.out.println(id);
+		Configuration con = new Configuration();
+		con.configure();
+		con.addAnnotatedClass(CityEntity.class);
+		SessionFactory sessionFactory = con.buildSessionFactory();
+		if (sessionFactory != null) {
+			Session session = sessionFactory.openSession();
+			entity = session.get(CityEntity.class, id);
+			if (entity != null) {
+				System.out.println(id);
+			} else {
+				System.out.println("entity is not found as id:" + id);
+				;
+
+			}
+			session.close();
+
+		}
+		sessionFactory.close();
+		return entity;
+	}
+
+	@Override
+	public void update(String newCity, int id) {
+
+		System.out.println("invoked update id dao method ");
+		System.out.println(id);
+		Configuration con = new Configuration();
+		con.configure();
+		con.addAnnotatedClass(CityEntity.class);
+		SessionFactory sessionFactory = con.buildSessionFactory();
+		if (sessionFactory != null) {
+			Session session = sessionFactory.openSession();
+			Transaction transaction = session.beginTransaction();
+
+			CityEntity entity = session.get(CityEntity.class, id);
+
+			if (entity != null) {
+				entity.setName(newCity);
+				session.update(entity);
+				transaction.commit();
+				System.out.println("updated city" + id);
+				session.close();
+
+			}
+			sessionFactory.close();
+		}
+
+	}
+
+	@Override
+	public void  delete( int id) {
+		
+		System.out.println("invoked update id dao method ");
+		System.out.println(id);
+		Configuration con=new Configuration();
+		con.configure();
+		con.addAnnotatedClass(CityEntity.class);
+		SessionFactory sessionFactory=con.buildSessionFactory();
+		if(sessionFactory!= null) {
+			Session session=sessionFactory.openSession();
+			Transaction transaction =session.beginTransaction();
+			
+			CityEntity entity =session.get(CityEntity.class, id);
+			if (entity != null) {
+				entity.setId(id);
+				session.delete(entity);
+				transaction.commit();
+				System.out.println("updated city" + id);
+				session.close();
+			}else {
+				System.out.println("not delete");
+			}
+
+			
+		}
+		sessionFactory.close();
+		return ;
+	}
 }

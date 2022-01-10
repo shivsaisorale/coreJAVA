@@ -1,4 +1,5 @@
 
+
 import com.xworkz.entity.CountryEntity;
 import com.xworkz.entity.dao.CountryDAO;
 import com.xworkz.entity.dao.CountryDAOimpl;
@@ -19,6 +20,10 @@ public class CountryScanner {
 		countryDAO.create(countryEntity3);
 		countryDAO.create(countryEntity4);
 		countryDAO.create(countryEntity5);
+	
+		CountryEntity centity=countryDAO.getById(1);
+		System.out.println(centity);
+		countryDAO.update("UK", 3);
+		countryDAO.delete(5);
 	}
-
 }

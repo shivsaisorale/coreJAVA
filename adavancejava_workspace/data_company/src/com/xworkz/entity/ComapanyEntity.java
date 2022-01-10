@@ -21,7 +21,7 @@ public class ComapanyEntity {
 	private String website;
 
 	public ComapanyEntity() {
-		// TODO Auto-generated constructor stub
+	 
 	}
 
 	public ComapanyEntity(int id, String name, String domain, String website) {

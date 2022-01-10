@@ -1,3 +1,4 @@
+
 import com.xworkz.entity.StateEntity;
 import com.xworkz.entity.dao.StateDAO;
 import com.xworkz.entity.dao.StateEntityDAOimpl;
@@ -13,12 +14,16 @@ public class StateScanner {
 		StateEntity stateEntity5 = new StateEntity(5, "Uttar Pradesh", 27, "Indore ");
 
 		StateDAO stateDAO = new StateEntityDAOimpl();
-		stateDAO.create(stateEntity1);
-		stateDAO.create(stateEntity2);
-		stateDAO.create(stateEntity3);
-		stateDAO.create(stateEntity4);
-		stateDAO.create(stateEntity5);
+		//stateDAO.create(stateEntity1);
+		//stateDAO.create(stateEntity2);
+		//stateDAO.create(stateEntity3);
+		//stateDAO.create(stateEntity4);
+		//stateDAO.create(stateEntity5);
 
+		StateEntity centity = stateDAO.getById(1);
+		System.out.println(centity);
+		stateDAO.update("Tamilanadu", 3);
+		stateDAO.delete(5);
 	}
 
 }
