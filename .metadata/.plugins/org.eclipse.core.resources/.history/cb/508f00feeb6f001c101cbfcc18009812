@@ -1,0 +1,25 @@
+
+import com.xworkz.entity.CountryEntity;
+import com.xworkz.entity.dao.CountryDAO;
+import com.xworkz.entity.dao.CountryDAOimpl;
+
+
+public class CountryScanner {
+
+	public static void main(String[] args) {
+
+		CountryEntity countryEntity1 = new CountryEntity(1, "USA", "NAM", 30l);
+		CountryEntity countryEntity2 = new CountryEntity(2, "Canada", "NAM", 40l);
+		CountryEntity countryEntity3 = new CountryEntity(1, "Brazil", "NAM", 50l);
+		CountryEntity countryEntity4 = new CountryEntity(1, "Mexico", "NAM", 70l);
+		CountryEntity countryEntity5 = new CountryEntity(1, "India", "NAM", 60l);
+		
+		CountryDAO countryDAO=new CountryDAOimpl();
+		countryDAO.create(countryEntity1);
+		countryDAO.create(countryEntity2);
+		countryDAO.create(countryEntity3);
+		countryDAO.create(countryEntity4);
+		countryDAO.create(countryEntity5);
+	}
+
+}

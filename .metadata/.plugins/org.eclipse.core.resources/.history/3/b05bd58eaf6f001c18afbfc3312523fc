@@ -1,0 +1,11 @@
+import com.xworkz.entity.CountryEntity;
+
+public class CountryScanner {
+
+	public static void main(String[] args) {
+		
+		CountryEntity countryEntity=new CountryEntity(1, "USA", "NAM", "30M") ;
+
+	}
+
+}

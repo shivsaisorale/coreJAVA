@@ -1,0 +1,8 @@
+package com.xworkz.entity.dao;
+
+import com.xworkz.entity.PatientEntity;
+
+public interface PatientEntityDAO {
+
+	public void create(PatientEntity entity);
+}
