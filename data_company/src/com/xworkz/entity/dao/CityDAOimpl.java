@@ -84,32 +84,31 @@ public class CityDAOimpl implements CityDAO {
 	}
 
 	@Override
-	public void  delete( int id) {
-		
+	public void delete(int id) {
+
 		System.out.println("invoked update id dao method ");
 		System.out.println(id);
-		Configuration con=new Configuration();
+		Configuration con = new Configuration();
 		con.configure();
 		con.addAnnotatedClass(CityEntity.class);
-		SessionFactory sessionFactory=con.buildSessionFactory();
-		if(sessionFactory!= null) {
-			Session session=sessionFactory.openSession();
-			Transaction transaction =session.beginTransaction();
-			
-			CityEntity entity =session.get(CityEntity.class, id);
+		SessionFactory sessionFactory = con.buildSessionFactory();
+		if (sessionFactory != null) {
+			Session session = sessionFactory.openSession();
+			Transaction transaction = session.beginTransaction();
+
+			CityEntity entity = session.get(CityEntity.class, id);
 			if (entity != null) {
 				entity.setId(id);
 				session.delete(entity);
 				transaction.commit();
-				System.out.println("updated city" + id);
+				System.out.println("delete city" + id);
 				session.close();
-			}else {
+			} else {
 				System.out.println("not delete");
 			}
 
-			
 		}
 		sessionFactory.close();
-		return ;
+		return;
 	}
 }

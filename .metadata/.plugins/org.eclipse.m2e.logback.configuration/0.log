@@ -1392,3 +1392,125 @@ org.eclipse.core.runtime.CoreException: Launch configuration StateScanner refere
 2022-01-10 14:57:14,103 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\main\resources
 2022-01-10 14:57:14,105 [Worker-76: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-01-10 14:57:14,106 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\test\resources
+2022-01-10 15:18:55,041 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@352ad609{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-01-10 15:18:55,041 [Stop Help Server] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+2022-01-10 15:18:55,061 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6731470b{/help,null,STOPPED}
+2022-01-11 11:21:32,050 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-01-11 11:22:06,619 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @116871ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-01-11 11:22:07,489 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.37.v20210219; built: 2021-02-23T06:49:41.320Z; git: 27afab2bd37780d179836e313e0fe11bc4fa0ce9; jvm 15.0.2+7-27
+2022-01-11 11:22:07,564 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2022-01-11 11:22:07,565 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2022-01-11 11:22:07,569 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+2022-01-11 11:22:07,675 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7e1e8824{/help,null,AVAILABLE}
+2022-01-11 11:22:07,749 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3d65e338{HTTP/1.1, (http/1.1)}{127.0.0.1:50149}
+2022-01-11 11:22:07,750 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @118007ms
+2022-01-11 11:22:07,750 [Start Help Server] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2022-01-11 11:25:29,527 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 11:25:29,529 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\main\resources
+2022-01-11 11:25:29,534 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 11:25:29,535 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\test\resources
+2022-01-11 11:29:49,322 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 11:29:49,324 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\main\resources
+2022-01-11 11:29:49,328 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 11:29:49,329 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\data_company\src\test\resources
+2022-01-11 13:05:54,133 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xworkz.hibernate:tourist_project:0.0.1-SNAPSHOT @ D:\coreJAVA\adavancejava_workspace\tourist_project\pom.xml.
+2022-01-11 13:05:55,036 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /tourist_project/src
+2022-01-11 13:05:55,038 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /tourist_project/src/test/java because it overlaps with /tourist_project/src
+2022-01-11 13:05:55,422 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-01-11 13:05:56,468 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xworkz.hibernate:tourist_project:0.0.1-SNAPSHOT @ D:\coreJAVA\adavancejava_workspace\tourist_project\pom.xml.
+2022-01-11 13:05:56,855 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /tourist_project/src
+2022-01-11 13:05:56,856 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /tourist_project/src/test/java because it overlaps with /tourist_project/src
+2022-01-11 13:05:57,065 [Worker-21: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-01-11 13:05:57,609 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:05:57,610 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:05:57,613 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:05:57,625 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:12:34,711 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:12:34,712 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:12:34,717 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:12:34,718 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:13:11,400 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:13:11,402 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:13:11,404 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:13:11,407 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:14:36,603 [Worker-29: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xworkz.hibernate:tourist_project:0.0.1-SNAPSHOT @ D:\coreJAVA\adavancejava_workspace\tourist_project\pom.xml.
+2022-01-11 13:14:38,856 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:14:38,857 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:14:38,861 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:14:38,862 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:14:40,353 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:14:40,354 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:14:40,356 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:14:40,358 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:14:41,832 [Worker-34: Launching Executing install in D__coreJAVA_adavancejava_workspace_tourist_project] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\coreJAVA\adavancejava_workspace\tourist_project
+2022-01-11 13:14:41,833 [Worker-34: Launching Executing install in D__coreJAVA_adavancejava_workspace_tourist_project] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2022-01-11 13:15:41,882 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-01-11 13:15:42,522 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xworkz.hibernate:tourist_project:0.0.1-SNAPSHOT @ D:\coreJAVA\adavancejava_workspace\tourist_project\pom.xml.
+2022-01-11 13:15:43,023 [Worker-28: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /tourist_project/src
+2022-01-11 13:15:43,024 [Worker-28: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /tourist_project/src/test/java because it overlaps with /tourist_project/src
+2022-01-11 13:15:43,373 [Worker-28: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-01-11 13:15:43,981 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:15:43,982 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:15:43,984 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:15:43,985 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:19:13,944 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:19:13,945 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:19:13,949 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:19:13,950 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:26:57,966 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:26:57,968 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:26:57,976 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:26:57,977 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:43:38,480 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:43:38,482 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:43:38,485 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:43:38,489 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:44:15,835 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:44:15,836 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:44:15,839 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:44:15,840 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:44:33,985 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:44:33,987 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:44:33,997 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:44:33,998 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:45:03,117 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:45:03,119 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:45:03,121 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:45:03,123 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 13:46:58,155 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-01-11 13:46:58,769 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xworkz.hibernate:tourist_project:0.0.1-SNAPSHOT @ D:\coreJAVA\adavancejava_workspace\tourist_project\pom.xml.
+2022-01-11 13:46:59,936 [Worker-44: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /tourist_project/src
+2022-01-11 13:46:59,937 [Worker-44: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /tourist_project/src/test/java because it overlaps with /tourist_project/src
+2022-01-11 13:47:04,823 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2022-01-11 13:47:07,179 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:47:07,181 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 13:47:07,183 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 13:47:07,184 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:09:25,670 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:09:25,673 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:09:25,677 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:09:25,678 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:13:35,920 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:13:35,922 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:13:35,924 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:13:35,926 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:13:58,113 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:13:58,114 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:13:58,117 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:13:58,118 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:15:42,264 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:15:42,265 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:15:42,267 [Worker-56: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:15:42,268 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:15:46,167 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:15:46,168 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:15:46,171 [Worker-59: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:15:46,172 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 14:17:22,493 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:17:22,495 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\main\resources
+2022-01-11 14:17:22,498 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-11 14:17:22,499 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\coreJAVA\adavancejava_workspace\tourist_project\src\test\resources
+2022-01-11 15:46:09,987 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3d65e338{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-01-11 15:46:09,988 [Stop Help Server] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+2022-01-11 15:46:10,423 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7e1e8824{/help,null,STOPPED}
+2022-01-12 06:13:48,368 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
