@@ -4,20 +4,17 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
-import com.xworkz.tour.entity.TouristEntity;
+import com.xworkz.tour.entity.AirportEntity;
 import com.xworkz.tourscanner.util.EMFUtil;
 
-public class TouristDAOImpl implements TouristDAO {
-
-	public void put(TouristEntity entity) {
+public class AirportDAOimpl implements AirportDAO {
+	public void put(AirportEntity entity) {
 		EntityManagerFactory entityManagerFactory = EMFUtil.getEntityManagerFactory();
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-		EntityTransaction tran = entityManager.getTransaction();
-		tran.begin();
+		EntityTransaction transaction = entityManager.getTransaction();
+		transaction.begin();
 		entityManager.persist(entity);
-		tran.commit();
-
+		transaction.commit();
 	}
 
 }

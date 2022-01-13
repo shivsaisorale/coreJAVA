@@ -4,20 +4,17 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 
-import com.xworkz.tour.entity.TouristEntity;
+import com.xworkz.tour.entity.SilkManufactureEntity;
 import com.xworkz.tourscanner.util.EMFUtil;
 
-public class TouristDAOImpl implements TouristDAO {
+public class SilkManufactureeDAOimpl implements SilkManufactureeDAO {
 
-	public void put(TouristEntity entity) {
+	public void put(SilkManufactureEntity manufactureEntity) {
 		EntityManagerFactory entityManagerFactory = EMFUtil.getEntityManagerFactory();
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-		EntityTransaction tran = entityManager.getTransaction();
-		tran.begin();
-		entityManager.persist(entity);
-		tran.commit();
-
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		entityTransaction.begin();
+		entityManager.persist(manufactureEntity);
+		entityTransaction.commit();
 	}
-
 }

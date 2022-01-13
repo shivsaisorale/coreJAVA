@@ -5,14 +5,19 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import com.xworkz.tour.dao.TouristDAO;
+import com.xworkz.tour.dao.TouristDAOImpl;
+import com.xworkz.tour.entity.TouristEntity;
+
 public class TouristScanner {
 
 	public static void main(String[] args) {
 
-		EntityManagerFactory entityManagerFactory = Persistence
-				.createEntityManagerFactory("com.xworkz.tourist_project");
-		System.out.println(entityManagerFactory);
+		TouristEntity touristEntity = new TouristEntity(1, "Nandi Hills", 545, "Bengaluru", 100, "winter");
 
+		TouristDAO dao = new TouristDAOImpl();
+
+		dao.put(touristEntity);
 	}
 
 }

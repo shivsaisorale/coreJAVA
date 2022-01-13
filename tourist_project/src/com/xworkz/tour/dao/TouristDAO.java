@@ -4,6 +4,5 @@ import com.xworkz.tour.entity.TouristEntity;
 
 public interface TouristDAO {
 
-	public static void save(TouristEntity entity) {
-}
+	public void put(TouristEntity touristEntity);
 }
