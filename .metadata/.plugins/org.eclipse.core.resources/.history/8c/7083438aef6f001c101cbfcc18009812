@@ -1,8 +1,0 @@
-package com.xworkz.entity.dao;
-
-
-
-public interface PatitentEntity {
-
-	public void create( entity);
-}

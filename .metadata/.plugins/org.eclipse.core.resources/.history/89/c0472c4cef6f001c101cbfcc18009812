@@ -1,9 +1,0 @@
-package com.xworkz.entity.dao;
-
-import com.xworkz.entity.PatientEntity;
-
-public class PatientEntityDAO {
-
-	public void create(PatientEntity entity);
-	
-}

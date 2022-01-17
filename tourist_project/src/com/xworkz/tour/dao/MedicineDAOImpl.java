@@ -8,12 +8,12 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 
 import com.xworkz.tour.entity.AirportEntity;
+import com.xworkz.tour.entity.MedicineEntity;
 import com.xworkz.tourscanner.util.EMFUtil;
 
-import antlr.debug.TraceAdapter;
+public class MedicineDAOImpl implements MedicineDAO{
 
-public class AirportDAOimpl implements AirportDAO {
-	public void put(AirportEntity entity) {
+	public void put(MedicineEntity entity) {
 		EntityManagerFactory entityManagerFactory = EMFUtil.getEntityManagerFactory();
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		EntityTransaction transaction = entityManager.getTransaction();
@@ -22,7 +22,7 @@ public class AirportDAOimpl implements AirportDAO {
 		transaction.commit();
 	}
 
-	public void put(AirportDAOimpl entity) {
+	public void put(MedicineDAOImpl entity) {
 		EntityManagerFactory emf = EMFUtil.getEntityManagerFactory();
 		EntityManager entityManager = emf.createEntityManager();
 		EntityTransaction tx = entityManager.getTransaction();
@@ -47,9 +47,9 @@ public class AirportDAOimpl implements AirportDAO {
 		tx.commit();
 	}
 
-	public void putAll(List<AirportEntity> entities) {
+	public void putAll(List<MedicineEntity> entities) {
 		EntityManager manager = EMFUtil.getEntityManagerFactory().createEntityManager();
-		for (AirportEntity tourEntity : entities) {
+		for (MedicineEntity tourEntity : entities) {
 			manager.persist(tourEntity);
 
 			EntityTransaction tx = manager.getTransaction();
@@ -75,5 +75,4 @@ public class AirportDAOimpl implements AirportDAO {
 			tx.commit();
 		}
 	}
-
 }
