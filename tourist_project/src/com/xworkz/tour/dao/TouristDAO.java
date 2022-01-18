@@ -6,7 +6,10 @@ import com.xworkz.tour.entity.TouristEntity;
 
 public interface TouristDAO {
 
-	public void put(List<TouristEntity> touristEntity);
+	
+	void put(List<TouristEntity> touristEntity);
 
-	void putAll(List<TouristEntity> entities);
+	void addAll(List<TouristEntity> entities);
+
+	void put(TouristEntity entity);
 }

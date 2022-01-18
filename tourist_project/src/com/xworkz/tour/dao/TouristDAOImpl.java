@@ -13,46 +13,49 @@ import com.xworkz.tourscanner.util.EMFUtil;
 
 public class TouristDAOImpl implements TouristDAO {
 
+	
+	@Override
 	public void put(TouristEntity entity) {
 		EntityManagerFactory entityManagerFactory = EMFUtil.getEntityManagerFactory();
-		EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-		EntityTransaction tran = entityManager.getTransaction();
-		tran.begin();
-		entityManager.persist(entity);
-		tran.commit();
-
+		EntityManager manager = entityManagerFactory.createEntityManager();
+		EntityTransaction tx = manager.getTransaction();
+		tx.begin();
+		manager.persist(entity);
+		tx.commit();
 	}
-
 	@Override
-	public void putAll(List<TouristEntity> railwayStationEntities) {
-		EntityManagerFactory entityManagaerFactory = EMFUtil.getEntityManagerFactory();
+	public void addAll(List<TouristEntity> entities) {
+		EntityManager manager = EMFUtil.getEntityManagerFactory().createEntityManager();
+		for (TouristEntity touristEntity : entities) {
+			manager.persist(touristEntity);
 
-		EntityManager manager = entityManagaerFactory.createEntityManager();
-		EntityTransaction transaction = manager.getTransaction();
-		transaction.begin();
-		try {
+			EntityTransaction transaction = manager.getTransaction();
+
+			transaction.begin();
 			int flushcount = 0;
-			for (int i = 0; i < 10; i++) {
-				if (flushcount == 10) {
-					for (TouristEntity railwayStationEntity : railwayStationEntities) {
-						manager.persist(railwayStationEntity);
+
+			try {
+				for (int i = 0; i < 55; i++) {
+					if (flushcount == 10) {
 						manager.flush();
+						flushcount = 0;
 						manager.clear();
-
 					}
+					manager.flush();
+					flushcount++;
 				}
+			} catch (PersistenceException e) {
+				e.printStackTrace();
+				transaction.rollback();
 			}
-		} catch (PersistenceException e) {
+
 			transaction.commit();
+
 		}
-
 	}
-
 	@Override
 	public void put(List<TouristEntity> touristEntity) {
 		// TODO Auto-generated method stub
 		
 	}
-
 }
