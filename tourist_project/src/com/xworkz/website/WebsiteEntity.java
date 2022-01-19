@@ -5,33 +5,47 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name ="website")
+@Table(name = "website")
+@NamedQueries({
+		@NamedQuery(name = "getByNameGoogle", query = "select web from WebsiteEntity web where web.name ='getByNameGoogle'"),
+		@NamedQuery(name = "getByLikeUrlx", query = "select web from WebsiteEntity web where web.url like 'www.x%'"),
+		@NamedQuery(name="getByMinSince",query="select max(since) AS MAXIMUMSINCE FROM WebsiteEntity"),
+		@NamedQuery(name="getByMaxSince",query="select min(since) AS MINIMUMSINCE FROM WebsiteEntity"),
+		@NamedQuery(name="getBySecondMinSince",query="Select since,max(since)  from WebsiteEntity where since in(select max(since) from WebsiteEntity "),
+		@NamedQuery(name="getBySecondMaxSince",query="Select since,min(since)  from WebsiteEntity where since in(select min(since) from WebsiteEntity"),
+		
+})
 public class WebsiteEntity {
+
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	@Column(name= "w_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "w_id")
 	private int wid;
-	@Column(name= "w_name")
+	@Column(name = "w_name")
 	private String name;
-	@Column(name= "w_url")
+	@Column(name = "w_url")
 	private String url;
-	@Column(name= "w_since")
+	@Column(name = "w_since")
 	private int since;
-	@Column(name= "w_owner")
+	@Column(name = "w_owner")
 	private String owner;
-	@Column(name= "w_domain")
+	@Column(name = "w_domain")
 	private String domain;
 
 	public WebsiteEntity() {
 
 	}
 
-	public WebsiteEntity( String name, String url, int since, String owner, String domain) {
+	public WebsiteEntity(String name, String url, int since, String owner, String domain) {
 		super();
-		
+
 		this.name = name;
 		this.url = url;
 		this.since = since;
