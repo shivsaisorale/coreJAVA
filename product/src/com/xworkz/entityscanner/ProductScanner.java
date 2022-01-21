@@ -34,17 +34,12 @@ public class ProductScanner {
 		dao.save(entity9);
 		dao.save(entity10);
 		
-		dao.save(entity10);
-		dao.save(entity9);
-		dao.save(entity9);
-		dao.save(entity9);
-		dao.save(entity9);
-		dao.save(entity9);
+		List<ProductEntity> list=dao.saveAll(list);
+		dao.saveAll(list);
+	
 		
-		
-		
-		List<ProductEntity> product=dao.getAll(list);
-		System.out.println(product);
+		List<ProductEntity> list1=dao.getAll(list1);
+		System.out.println(list1);
 		
 		System.out.println(dao.getByMaxPrice());
 		
