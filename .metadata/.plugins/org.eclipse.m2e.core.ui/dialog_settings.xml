@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.xworkz.product"/>
+			<item value="com.xworkz.Website"/>
+			<item value="com.xworkz.jpa-util"/>
 			<item value="com.xworkz.hibernate"/>
 			<item value="com.xworkz.comapany"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="product"/>
+			<item value="Website"/>
+			<item value="jpa-util"/>
 			<item value="tourist_project"/>
 			<item value="data_comapny"/>
 		</list>
@@ -16,6 +22,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>

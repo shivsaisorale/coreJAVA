@@ -1,7 +1,7 @@
-package com.xworkz.tourscanner;
+package com.xworkz;
 
-import com.xworkz.tour.dao.WebsiteDAO;
-import com.xworkz.tour.dao.WebsiteDAOImpl;
+import com.xworkz.entity.DAO.WebsiteDAO;
+import com.xworkz.entity.DAO.WebsiteDAOImpl;
 import com.xworkz.website.WebsiteEntity;
 
 public class WEbsiteQueryScanner {

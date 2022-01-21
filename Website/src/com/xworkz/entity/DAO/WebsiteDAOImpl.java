@@ -1,4 +1,4 @@
-package com.xworkz.tour.dao;
+package com.xworkz.entity.DAO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -6,6 +6,9 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 import javax.persistence.Query;
 
+import org.hibernate.internal.util.collections.SingletonIterator;
+
+import com.xworkz.tour.dao.WebsiteDAO;
 import com.xworkz.tour.entity.TouristEntity;
 import com.xworkz.tourscanner.util.EMFUtil;
 import com.xworkz.website.WebsiteEntity;
@@ -13,6 +16,7 @@ import com.xworkz.website.WebsiteEntity;
 public class WebsiteDAOImpl implements WebsiteDAO {
 
 	@Override
+	
 	public void save(WebsiteEntity websiteEntities) {
 
 		EntityManager manager = EMFUtil.getEntityManagerFactory().createEntityManager();
@@ -44,7 +48,7 @@ public class WebsiteDAOImpl implements WebsiteDAO {
 		}
 	@Override
 	public WebsiteEntity getByLinkUrlx() {
-		EntityManager manager2=EMFUtil.getEntityManagerFactory().createEntityManager();
+		EntityManager manager2=SingletonIterator.getEntityManagerFactory().createEntityManager();
 		try {
 			Query query=manager.createNamedQuery("getByLikeUrlx");
 			Object obj =query.getSingleResult();
@@ -83,5 +87,25 @@ public class WebsiteDAOImpl implements WebsiteDAO {
 	
 	}
 }
+
+	@Override
+	public WebsiteEntity getByLinkUrlx(WebsiteEntity enWebsiteEntity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public WebsiteEntity getByMinSince(WebsiteEntity enWebsiteEntity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public WebsiteEntity getByMaxSince(WebsiteEntity enWebsiteEntity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 	
 }

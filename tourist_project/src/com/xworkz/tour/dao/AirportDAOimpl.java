@@ -22,10 +22,15 @@ public class AirportDAOimpl implements AirportDAO {
 		transaction.commit();
 	}
 
+	@Override
+	public void putAll(List<AirportEntity> airport) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 
 
-		}
-	}
+		
 
 }
