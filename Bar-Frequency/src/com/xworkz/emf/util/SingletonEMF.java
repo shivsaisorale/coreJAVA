@@ -1,4 +1,4 @@
-package com.xworkz.emfutil;
+package com.xworkz.emf.util;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -12,7 +12,7 @@ public class SingletonEMF {
 	}
 
 	static {
-		
+
 		entityManagerFactory = Persistence.createEntityManagerFactory("com.xworkz");
 
 	}

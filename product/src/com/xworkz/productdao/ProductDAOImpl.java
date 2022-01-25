@@ -7,7 +7,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 import javax.persistence.Query;
 
-import com.xworkz.emfutil.SingletonEMF;
+import com.xworkz.emf.util.SingletonEMF;
 import com.xworkz.productentity.ProductEntity;
 
 public class ProductDAOImpl implements ProductDAO {
@@ -57,25 +57,10 @@ public class ProductDAOImpl implements ProductDAO {
 	@Override
 	public ProductEntity getByMaxPrice() {
 
-		EntityManager manager = null;
-		try {
-			manager = SingletonEMF.getEntityManagerFactory().createEntityManager();
-			Query query = manager.createNamedQuery("getMaxPrice");
-			return (ProductEntity) query.getSingleResult();
+		EntityManager man
 
-		} catch (PersistenceException e) {
-			e.printStackTrace();
-		} finally {
-			if (manager != null) {
-				manager.close();
-			}
-		}
 
-		return null;
-
-	}
-
-	@Override
+		@Override
 	public List<ProductEntity> getAll(List<ProductEntity> entities) {
 
 		{
@@ -158,6 +143,24 @@ public class ProductDAOImpl implements ProductDAO {
 			}
 		}
 		return null;
+	}
+
+	
+	
+
+	
+	@Override
+	public Object getNameAndPriceByBrand(String brand) {
+		EntityManager manager=null;
+		try {
+			manager=SingletonEMF.getEntityManagerFactory().createEntityManager();
+			manager.createNamedQuery((String) getNameAndPriceByBrand);
+			
+		}catch(PersistenceException e)
+			e.printStackTrace();
+		manager.
+	}
+				return null;
 	}
 
 }

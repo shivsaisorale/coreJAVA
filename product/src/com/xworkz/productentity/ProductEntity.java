@@ -23,6 +23,7 @@ import lombok.NoArgsConstructor;
 	@NamedQuery(name="getByTotalPrice",query="Select sum(price) from ProductEntity"),
 	@NamedQuery(name="getByBrand",query="select product.brand from ProductEntity "),
 	@NamedQuery(name="getBrandByName",query="from ProductEntity like where like.name=:name"),
+	@NamedQuery(name="getNameAndPriceByBrand",query="from ProductEntity like where like.name=:brand"),
 	
 })
 public class ProductEntity {

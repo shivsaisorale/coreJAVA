@@ -20,6 +20,6 @@ public interface ProductDAO {
 
 	String getBrandByName(String name);
 
-	
+	Object[] getNameAndPriceByBrand(String brand);
 
 }
