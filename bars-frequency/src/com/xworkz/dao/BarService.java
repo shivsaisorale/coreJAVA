@@ -4,6 +4,6 @@ import com.xworkz.bar.entity.BarEntity;
 
 public interface BarService {
 
-	public void validateAndSave(BarEntity entity);
+	public boolean validateAndSave(BarEntity entity);
 
 }

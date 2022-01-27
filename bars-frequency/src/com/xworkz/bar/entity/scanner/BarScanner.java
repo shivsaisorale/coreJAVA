@@ -12,8 +12,8 @@ public class BarScanner {
 
 	public static void main(String[] args) {
 
-		BarEntity barEntity1 = new BarEntity("CoastalBar", "omsir@gmail.com", 9875433321l, "jp nagar ", "nagappa", 5,
-				10, 10, "shisai", LocalDateTime.now(), "kiran", LocalDateTime.now());
+		BarEntity barEntity1 = new BarEntity(null, "omsir@gmail.com", 9875433321l, "jp nagar ", "nagappa", 5, 10, 10,
+				"shisai", LocalDateTime.now(), "kiran", LocalDateTime.now());
 		BarEntity barEntity2 = new BarEntity("Communiti", "sai@gmail.com", 9874561236l, "Brigade Road", "kaagappa", 3,
 				20, 2, "shisai", LocalDateTime.now(), "kiran", LocalDateTime.now());
 		BarEntity barEntity3 = new BarEntity("Vishwas Bar", "shiva@gmail.com", 81345567894l, "Krishna murti Layout",
@@ -24,16 +24,16 @@ public class BarScanner {
 				3, 40, 2, "shisai", LocalDateTime.now(), "kiran", LocalDateTime.now());
 
 		BarDAO barDAO = new BarDAOImpl();
-		barDAO.save(barEntity5);
-		barDAO.save(barEntity4);
-		barDAO.save(barEntity3);
-		barDAO.save(barEntity2);
-
+//		barDAO.save(barEntity5);
+//		barDAO.save(barEntity4);
+//		barDAO.save(barEntity3);
+//		barDAO.save(barEntity2);
+//
 		BarService barDAO2 = new BarServiceImpl();
-		barDAO2.validateAndSave(barEntity5);
-		barDAO2.validateAndSave(barEntity2);
-		barDAO2.validateAndSave(barEntity3);
-		barDAO2.validateAndSave(barEntity4);
+//		barDAO2.validateAndSave(barEntity5);
+//		barDAO2.validateAndSave(barEntity2);
+//		barDAO2.validateAndSave(barEntity3);
+//		barDAO2.validateAndSave(barEntity4);
 		barDAO2.validateAndSave(barEntity1);
 
 	}
