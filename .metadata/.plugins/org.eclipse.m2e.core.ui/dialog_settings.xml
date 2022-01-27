@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.xworkz.vendor"/>
+			<item value="com.xwrokz.register"/>
 			<item value="com.xworkz.bars-frequency"/>
 			<item value="com.xworkz.Bar-Frequency"/>
 			<item value="com.xworkz.product"/>
@@ -13,6 +15,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="vendor"/>
+			<item value="register"/>
 			<item value="bars-frequency"/>
 			<item value="Bar-Frequency"/>
 			<item value="product"/>

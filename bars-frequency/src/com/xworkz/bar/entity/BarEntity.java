@@ -49,11 +49,10 @@ public class BarEntity implements Serializable {
 	@Column(name = "b_updatedAt")
 	private LocalDateTime updatedAt;
 
-	public BarEntity(String name, String email, long phoNum, String location, String owner, int noOfbrands,
-			int quntity, int noOfcustomer, String createdBy, LocalDateTime createdAt, String updatedBy,
-			LocalDateTime updatedAt) {
+	public BarEntity(String name, String email, long phoNum, String location, String owner, int noOfbrands, int quntity,
+			int noOfcustomer, String createdBy, LocalDateTime createdAt, String updatedBy, LocalDateTime updatedAt) {
 		super();
-		
+
 		this.name = name;
 		this.email = email;
 		this.phoNum = phoNum;

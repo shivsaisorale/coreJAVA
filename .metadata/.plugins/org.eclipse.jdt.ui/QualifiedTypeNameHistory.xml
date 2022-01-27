@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.FactoryDAOimpl"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.AirportDAO"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.RailwayStationEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.RailwayStationDAO"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.RailwayStationDAOImpl"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.TouristEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.MedicineEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.AirportDAOimpl"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.entity.AirportEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.tour.dao.MedicineDAOImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.tour.dao.MedicineDAO"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedNativeQueries"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedNativeQuery"/>
@@ -39,19 +26,8 @@
     <fullyQualifiedTypeName name="com.xworkz.bar.dao.BarDAO"/>
     <fullyQualifiedTypeName name="com.xworkz.bar.dao.BarDAOImpl"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
-    <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
-    <fullyQualifiedTypeName name="com.xworkz.emf.util.SingletonEMF"/>
-    <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
     <fullyQualifiedTypeName name="org.w3c.dom.css.Counter"/>
     <fullyQualifiedTypeName name="com.xworkz.dao.service.BarServiceImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.bar.entity.BarEntity"/>
@@ -60,4 +36,28 @@
     <fullyQualifiedTypeName name="com.xworkz.dao.BarService"/>
     <fullyQualifiedTypeName name="com.xworkz.dao.BarDAOImpl"/>
     <fullyQualifiedTypeName name="javax.xml.bind.ValidationException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="register.entity.RegisterEntity"/>
+    <fullyQualifiedTypeName name="register.dao.RegisterDAO"/>
+    <fullyQualifiedTypeName name="register.dao.RegisterDAOImpl"/>
+    <fullyQualifiedTypeName name="service.RegisterService"/>
+    <fullyQualifiedTypeName name="service.RegisterServiceDAOIMpl"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="com.xworkz.emf.util.SingletonEMF"/>
+    <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
+    <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
+    <fullyQualifiedTypeName name="com.xworkz.vendor.entity.VendorEntity"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.xworkz.vendor.dao.VendorDAOImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.vendor.service.VendorService"/>
+    <fullyQualifiedTypeName name="com.xworkz.vendor.service.VendorServiceImpl"/>
+    <fullyQualifiedTypeName name="com.google.protobuf.Service"/>
+    <fullyQualifiedTypeName name="com.xworkz.vendor.dao.VendorDAO"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
 </qualifiedTypeNameHistroy>

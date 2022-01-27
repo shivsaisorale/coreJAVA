@@ -13,8 +13,10 @@ public class BarDAOImpl implements BarDAO {
 	public void save(BarEntity entity) {
 		EntityManager manager = SingletonEMF.getEntityManagerFactory().createEntityManager();
 		EntityTransaction transaction = manager.getTransaction();
-		transaction.begin();
 		try {
+			
+			transaction.begin();
+
 			manager.persist(entity);
 
 		} catch (PersistenceException e) {
