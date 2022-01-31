@@ -63,4 +63,48 @@ public class VendorServiceImpl implements VendorService {
 		return valid;
 
 	}
+
+	@Override
+	public boolean validedateAndFind(String loginname, String password) {
+		boolean valid = false;
+		if (loginname != null && !(loginname.isEmpty()) && (password != null && !(password.isEmpty()))) {
+			if (loginname.length() >= 8 && password.length() >= 8) {
+				valid = dao.findLogin(loginname, password);
+			}
+		}
+		return valid;
+
+	}
+
+	@Override
+	public boolean validateAndChangePassword(String email, String newPassword) {
+		boolean valid = false;
+
+		if (email != null && !(email.isEmpty()) && email.contains("@") && (email.endsWith(".com"))){
+
+			if (valid = true) {
+
+				boolean valid1 = dao.findByEmail(email);
+				if (valid1 = true) {
+					if (newPassword != null && !(newPassword.isEmpty()) && !(newPassword.length() < 7)
+							&& !(newPassword.length() > 16)) {
+						dao.updatePasswordByEmail(email, newPassword);
+
+					} 
+					else {
+
+						System.out.println("cannot update the password");
+					}
+
+				} 
+
+			}
+			else {
+				System.out.println("invalid email");
+			}
+		}
+		return valid;
+		
+
+	}
 }

@@ -7,5 +7,7 @@ public interface VendorService {
 	boolean validAndSave(VendorEntity entity);
 	
 	
-	
+boolean validedateAndFind(String loginname,String password);
+
+boolean validateAndChangePassword(String email,String newPassword);
 }

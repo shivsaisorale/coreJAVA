@@ -34,7 +34,7 @@ public class ProductScanner {
 		dao.save(entity9);
 		dao.save(entity10);
 		
-		List<ProductEntity> list=dao.saveAll(list);
+		List<ProductEntity> list=dao.save();
 		dao.saveAll(list);
 	
 		
@@ -44,7 +44,7 @@ public class ProductScanner {
 		System.out.println(dao.getByMaxPrice());
 		
 		System.out.println(dao.getBrandByName("HP"));
-		System.out.println(dao.getByBrand(("sony"));
+		System.out.println(dao.getByBrand("sony"));
 		
 
 	}

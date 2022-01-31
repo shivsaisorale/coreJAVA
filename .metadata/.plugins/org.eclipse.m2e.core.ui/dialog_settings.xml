@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.xwrokz.springframework"/>
+			<item value="com.xworkz.cycle"/>
 			<item value="com.xworkz.vendor"/>
 			<item value="com.xwrokz.register"/>
 			<item value="com.xworkz.bars-frequency"/>
@@ -15,6 +17,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="springframework"/>
+			<item value="cycle"/>
 			<item value="vendor"/>
 			<item value="register"/>
 			<item value="bars-frequency"/>

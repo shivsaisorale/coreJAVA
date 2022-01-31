@@ -5,15 +5,17 @@ import javax.persistence.Persistence;
 
 public class SingletonEMF {
 
-	private static EntityManagerFactory entityManagerFactory;
+		private static EntityManagerFactory entityManagerFactory;
 
-	public static EntityManagerFactory getEntityManagerFactory() {
-		return entityManagerFactory;
-	}
+		public static EntityManagerFactory getEntityManagerFactory() {
+			return entityManagerFactory;
+		}
 
-	static {
+		static {
 
-		entityManagerFactory = Persistence.createEntityManagerFactory("com.xworkz");
+			entityManagerFactory = Persistence.createEntityManagerFactory("com.xworkz");
 
-	}
+		}
+	
+
 }
