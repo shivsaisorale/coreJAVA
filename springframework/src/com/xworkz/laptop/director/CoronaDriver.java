@@ -6,6 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.xworkz.laptop.Corona;
 
 public class CoronaDriver {
+	
+	public static void main(String[] args) {
+		
+	
 
 	String string="resource/spring.xml";
 	
@@ -13,5 +17,5 @@ public class CoronaDriver {
 	
 	Corona corona=applicationContext.getBean(Corona.class);
 	corona.happy();
-
+}
 }

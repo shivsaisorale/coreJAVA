@@ -7,11 +7,17 @@ import com.xworkz.laptop.Minister;
 
 public class MinisterDriver {
 
+	public static void main(String[] args) {
+		
+	
 	String  string="resource/spring.xml";
 	
 	ApplicationContext applicationContext=new ClassPathXmlApplicationContext(string);
 	
 	Minister minister=applicationContext.getBean(Minister.class);
-	Minister.corruption();
+	minister.corruption();
 	
+	Minister minister1=applicationContext.getBean("String",Minister.class);
+	
+	}
 }
