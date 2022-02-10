@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.xworkz.jpa-criteria"/>
 			<item value="com.xwrokz.springframework"/>
 			<item value="com.xworkz.cycle"/>
 			<item value="com.xworkz.vendor"/>
@@ -17,6 +18,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="jpa-criteria"/>
 			<item value="springframework"/>
 			<item value="cycle"/>
 			<item value="vendor"/>

@@ -8,7 +8,7 @@ public interface ProductDAO {
 
 	List<ProductEntity> saveAll(List<ProductEntity> entities);
 
-	void save(ProductEntity entity);
+	List<ProductEntity> save();
 
 	ProductEntity getByMaxPrice();
 

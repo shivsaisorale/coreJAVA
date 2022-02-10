@@ -22,14 +22,15 @@ public class VendorScanner {
 		VendorDAO dao = new VendorDAOImpl();
 
 		VendorService service = new VendorServiceImpl(dao);
-//		service.validAndSave(entity);
-//		service.validAndSave(entity2);
+		service.validAndSave(entity);
+		service.validAndSave(entity2);
 
-//		boolean valid = service.validedateAndFind("shivsais", "kiran123");
-//		System.out.println(valid);
+		boolean valid = service.validedateAndFind("shivsais", "kiran123");
+		System.out.println(valid);
 
-		service.validateAndChangePassword("shiva@gmail.com", "kiran123");
-	
+//		service.validateAndChangePassword("shiva@gmail.com", "kiran123");
+		service.validateAndChangePassword("kiran@gamil.com", "kiran123");
+
 
 	}
 }
