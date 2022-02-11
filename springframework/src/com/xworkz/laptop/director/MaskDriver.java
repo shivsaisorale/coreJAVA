@@ -23,8 +23,7 @@ public class MaskDriver {
 
 		Mask mask1 = applicationContext.getBean(Mask.class);
 
-		boolean boo1 = mask1.stitching();
-		System.out.println(boo1.toString());
+		
 
 		String string3 = mask.selling();
 		System.out.println(string3.hashCode());

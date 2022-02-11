@@ -15,16 +15,10 @@ public class SteamerDriver {
 
 		Steamer stm = applicationContext.getBean("Steamer", Steamer.class);
 
-		boolean boo = stm.clean();
-		System.out.println(boo.toString());
-
 		String string2 = stm.heat();
 		System.out.println(string2.hashCode());
 
 		Steamer stm1 = applicationContext.getBean("Steamer1", Steamer.class);
-
-		boolean boo1 = stm1.clean();
-		System.out.println(boo1.toString());
 
 		String string3 = stm1.heat();
 		System.out.println(string3.hashCode());

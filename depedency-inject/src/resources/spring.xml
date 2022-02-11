@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+
+	<bean id="transportImpl" class="com.xworkz.dao.TransportImpl">
+		<constructor-arg value="road transport"></constructor-arg>
+		<constructor-arg value="23"></constructor-arg>
+
+	</bean>
+
+	<bean id="travellerImpl" class="com.xworkz.dao.TravellerImpl">
+		<property name="name" value="airavtashop"></property>
+		<property name="owner" value="kiran"></property>
+		<property name="travels" ref="travellerImpl"></property>
+
+	</bean>
+	<bean id="travelsImpl" class="com.xworkz.dao.TravelsImpl">
+		<property name="name" value="shivu"></property>
+		<property name="place" value="bidar"></property>
+		<property name="transport" ref="travelsImpl"></property>
+
+	</bean>
+
+	<bean id="person" class="com.xworkz.dao.Person">
+		<property name="name" value="shivu"></property>
+		<property name="bookNames">
+			<list>
+				<value>APJ ABDUL KALAM</value>
+				<value>Jana eyre</value>
+				<value>Lord of the rings</value>
+				<value>Puneetha</value>
+
+
+
+			</list>
+
+
+
+		</property>
+
+	</bean>
+
+</beans>
