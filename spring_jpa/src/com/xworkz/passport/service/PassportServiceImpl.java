@@ -11,15 +11,16 @@ public class PassportServiceImpl implements PassportService {
 
 	private PassportRepositery repo;
 
-	 public PassportServiceImpl(PassportRepositery repo) {
-	 this.repo=repo;
-	 }
+	public PassportServiceImpl(PassportRepositery repo) {
+		this.repo = repo;
+	}
 
 	@Override
 	public boolean validateandsave(PassportEntity entity) {
 		boolean valid = false;
 		if (entity.getIssuedBy() != null && !(entity.getIssuedBy().isEmpty()) && !(entity.getIssuedBy().length() < 3)
 				&& !(entity.getIssuedBy().length() > 135)) {
+			System.out.println(entity.getIssuedBy());
 			valid = true;
 		} else {
 			System.out.println("invalid IssuedBy");
@@ -27,7 +28,8 @@ public class PassportServiceImpl implements PassportService {
 			return valid;
 		}
 
-		if (entity.getIssuedAT() != null && (entity.getIssuedAT().isBefore(null) && (equals(entity)))) {
+		if (entity.getIssuedAT() != null) {
+			System.out.println(entity.getIssuedAT());
 			valid = true;
 		} else {
 			System.out.println("invalid Issuedat");
@@ -37,6 +39,7 @@ public class PassportServiceImpl implements PassportService {
 		}
 
 		if (entity.getExpiresAt() != null) {
+			System.out.println(entity.getExpiresAt());
 			valid = true;
 		} else {
 			System.out.println("invalid expires");
@@ -44,7 +47,8 @@ public class PassportServiceImpl implements PassportService {
 			return valid;
 
 		}
-		if (entity.getGender() != null && entity.getExpiresAt().isAfter(entity.getIssuedAT().plusYears(10))) {
+		if (entity.getGender() != null) {
+
 			valid = true;
 		} else {
 			System.out.println("invalid gender");
@@ -55,6 +59,7 @@ public class PassportServiceImpl implements PassportService {
 
 		if (entity.getAddress() != null && !(entity.getAddress().length() < 20)
 				&& !(entity.getAddress().length() > 200)) {
+			System.out.println(entity.getAddress());
 			valid = true;
 		} else {
 			System.out.println("invalid adress");
@@ -64,6 +69,7 @@ public class PassportServiceImpl implements PassportService {
 		}
 		if (entity.getFullname() != null && !(entity.getFullname().length() < 10)
 				&& !(entity.getFullname().length() > 200)) {
+			System.out.println(entity.getFullname());
 			valid = true;
 		} else {
 			System.out.println("invalid fullnmae");
@@ -90,6 +96,7 @@ public class PassportServiceImpl implements PassportService {
 		}
 
 		if (entity.getBloodGroup() != null) {
+
 			valid = true;
 		} else {
 			System.out.println("invalid bloodgrup");
@@ -99,6 +106,8 @@ public class PassportServiceImpl implements PassportService {
 		}
 
 		if (entity.getVerifiedDocument() != null) {
+			
+
 			valid = true;
 		} else {
 			System.out.println("invalid verfieddoument");
@@ -110,7 +119,7 @@ public class PassportServiceImpl implements PassportService {
 		if (String.valueOf(entity.getPassporrtNo()).length() == 8
 				&& !(entity.getPassporrtNo().toUpperCase().startsWith("A"))) {
 			String regex = "^[A-PR-WYa-pr-wy][1-9]\\d" + "\\s?\\d{4}[1-9]$";
-
+			System.out.println(entity.getPassporrtNo());
 			valid = true;
 		} else {
 			System.out.println("invalid passportnum");

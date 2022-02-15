@@ -8,7 +8,7 @@ public enum VerifiedDocument {
 	
 	private VerifiedDocument(String document) {
 		this.document=document;
-		System.out.println("shotting on ");
+		System.out.println("shotting on verified ");
 	}
 
 	public String getDocument() {
