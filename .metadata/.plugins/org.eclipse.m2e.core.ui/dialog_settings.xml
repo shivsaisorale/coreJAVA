@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="com.xworkz.spring_jpa"/>
 			<item value="com.xworkz.depedency-inject"/>
 			<item value="com.xworkz.jpa-criteria"/>
 			<item value="com.xwrokz.springframework"/>
@@ -19,6 +20,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring_jpa"/>
 			<item value="depedency-inject"/>
 			<item value="jpa-criteria"/>
 			<item value="springframework"/>

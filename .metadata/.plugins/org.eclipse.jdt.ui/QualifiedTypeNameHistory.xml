@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Corona"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Minister"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Juice"/>
-    <fullyQualifiedTypeName name="java.lang.Class"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.director.MaskDriver"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Mask"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Oximeter"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Paint"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Purifier"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.director.SanitizerDriver"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Sanitizer"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.Steamer"/>
-    <fullyQualifiedTypeName name="com.xworkz.laptop.director.TabletDriver"/>
     <fullyQualifiedTypeName name="com.xworkz.laptop.Tablet"/>
     <fullyQualifiedTypeName name="com.xworkz.laptop.Tissue"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="com.xworkz.dao.Travels"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.xworkz.dao.Person"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.constant.Gender"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.constant.PassportPersonnelType"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.constant.BloodGroup"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.constant.VerifiedDocument"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.constant.SingletonEMF"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.entity.PassportEntity"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.service.PassportService"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.service.PassportServiceImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.repositery.PassportRepositery"/>
+    <fullyQualifiedTypeName name="com.xworkz.passport.repositery.PassportRepositeryImpl"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>
