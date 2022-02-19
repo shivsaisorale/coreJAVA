@@ -2,20 +2,26 @@ package com.xworkz.browser;
 
 import javax.persistence.EntityManagerFactory;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.xworkz.internet.Internet;
 
+@Component
 public class ChromeBrowser implements Browser {
-
-	private Internet internet;
+	@Autowired
+	private Internet internet1;
 
 	public ChromeBrowser(Internet internet) {
-		this.internet=internet;
+		this.internet1 = internet1;
 	}
 
 	@Override
 	public void surf() {
-		System.out.println("invoked on browser");
 		
+		this.internet1.connect();
+		System.out.println("invoked on browser");
+
 	}
 
 }

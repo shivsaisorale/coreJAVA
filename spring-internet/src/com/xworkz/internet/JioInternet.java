@@ -8,14 +8,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class JioInternet implements Internet {
 	@Autowired
-	EntityManagerFactory
+	private EntityManagerFactory entityManagerFactory;
 
-	public JioInternet(Internet internet) {
-		
+	public JioInternet(EntityManagerFactory entityManagerFactory) {
+		this.entityManagerFactory = entityManagerFactory;
+
 	}
 
 	@Override
 	public void connect() {
+		
 		System.out.println("conncting using airtel");
 	}
 }
