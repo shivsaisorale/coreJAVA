@@ -1,6 +1,5 @@
 package com.xworkz.entity.dao;
 
-import org.hibernate.sql.Update;
 
 import com.xworkz.entity.CityEntity;
 

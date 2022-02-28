@@ -20,4 +20,5 @@ public class Entity {
 	@Qualifier("AirtelInternet")
 	private Internet internet1;
 
+	
 }

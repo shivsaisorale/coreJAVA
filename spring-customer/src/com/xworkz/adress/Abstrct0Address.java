@@ -1,6 +1,7 @@
 package com.xworkz.adress;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import lombok.Data;
 import lombok.Getter;
@@ -9,12 +10,20 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-public abstract class Abstrct0Address implements Adress {
+@Component
+public abstract class Abstrct0Address {
+
 	@Value("rajajinagar")
-	private String street;
+	protected String street;
 	@Value("301")
-	private String doorNo;
+	protected int doorNo;
 	@Value("Benagluru")
-	private String city;
+	protected String city;
+
+	public abstract void setStreet(String street);
+
+	public abstract void setDoorNo(int doorNo);
+
+	public abstract void setCity(String city);
 
 }

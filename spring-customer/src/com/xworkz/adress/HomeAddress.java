@@ -1,32 +1,35 @@
 package com.xworkz.adress;
 
-import java.util.List;
-
-import javax.persistence.EntityManagerFactory;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class HomeAddress extends Abstrct0Address implements Adress {
 
-	public void setValues() {
-		List<String> values;
-		this.setValues();
-	}
-
-	@Autowired
-	private Adress address;
-
-	@Autowired
-	private EntityManagerFactory entityManagerFactory;
-
 	public HomeAddress() {
-		this.entityManagerFactory = entityManagerFactory;
+		System.out.println("shotting on homeaddress");
 	}
 
-	
+
+
+	@Override
+	@Value("mejestic")
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	@Override
+	@Value("100")
+	public void setDoorNo(int doorNo) {
+		this.doorNo = doorNo;
+	}
+
+	@Override
+	@Value("nammabengalore")
+	public void setCity(String city) {
+		this.city = city;
+
+	}
 	@Override
 	public void displayDetails() {
 

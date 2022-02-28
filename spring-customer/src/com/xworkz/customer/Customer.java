@@ -13,22 +13,16 @@ import com.xworkz.ecommerce.ECommerce;
 public class Customer {
 	@Value("shivsai")
 	private String name;
-	Adress adress;
-	ECommerce ecommerce;
-
 	@Autowired
-	@Qualifier("abstrctAddress")
+	@Qualifier("homeAddress")
 	private Adress address;
+	@Autowired
+	private ECommerce ecommerce;
 
-	public Customer(Adress address) {
-		this.address = address;
-	}
-	
-
-	
 	public void order(String item) {
 		this.address.displayDetails();
-		this.ecommerce.orderitem(item);
+		this.ecommerce.cancelItem(item);
 
 	}
+
 }
