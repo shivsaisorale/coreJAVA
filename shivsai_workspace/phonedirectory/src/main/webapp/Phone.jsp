@@ -15,7 +15,7 @@
 </head>
 <body>
 	<h1>WelCome to Phone Directory</h1>
-	<span style="color: red:"> ${message }</span>
+
 	<span> ${message} </span>
 	<form action="call.do" method="post">
 		<div>
@@ -66,6 +66,7 @@
 			<input type="submit" name="Add Contact">
 		</div>
 	</form>
+	<span style="color: red;"> ${message }</span>
 </body>
 </html>
 </body>

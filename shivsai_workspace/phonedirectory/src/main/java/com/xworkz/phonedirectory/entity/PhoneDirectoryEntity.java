@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Phone")
+@Table(name = "phone_list")
 public class PhoneDirectoryEntity {
 
 	@Id

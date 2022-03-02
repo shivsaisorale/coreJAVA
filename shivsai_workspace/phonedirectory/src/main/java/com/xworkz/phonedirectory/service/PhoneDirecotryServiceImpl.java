@@ -68,7 +68,7 @@ public class PhoneDirecotryServiceImpl implements PhoneDirecotryService {
 			System.out.println("invalid City");
 		}
 
-		if (valid) {
+		if (valid=true) {
 			repo.save(directoryEntity);
 		}
 		return valid;
