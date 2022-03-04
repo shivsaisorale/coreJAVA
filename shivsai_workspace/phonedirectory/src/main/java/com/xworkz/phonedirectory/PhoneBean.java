@@ -28,9 +28,10 @@ public class PhoneBean {
 		boolean saved = direcotryService.validateAndsave(directoryEntity);
 		if (saved) {
 			System.out.println("Contact is saved and successfully" + directoryDTO.getName());
-
+			model.addAttribute("message","Product is disply");
 		} else {
 			System.out.println("Contact is not saved " + directoryDTO.getName());
+			model.addAttribute("message","Product is not disply");
 		}
 		return "/Phone.jsp";
 	}
