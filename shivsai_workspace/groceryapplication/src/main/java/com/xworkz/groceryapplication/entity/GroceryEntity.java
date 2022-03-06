@@ -3,6 +3,8 @@ package com.xworkz.groceryapplication.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -10,6 +12,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "grocery")
+@NamedQueries({@NamedQuery(name = "validateAndByName" ,query="select grocery from GroceryEntity as grocery where grocery.name=:nm")})
 public class GroceryEntity {
 	@Id
 	@Column(name = "g_id")

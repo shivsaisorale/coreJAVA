@@ -11,13 +11,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Add Item Page</title>
 </head>
 <body>
 	<h1>Grocery Application</h1>
 
-	<span> ${message} </span>
-	<form action="grocery.do" method="post">
+	
+	<form action="addItem.do" method="post">
 		<div>
 			<label for="name">Name</label> <select name="name" id="name">
 				<option value="Onion">Onion</option>
@@ -35,8 +35,8 @@
 			</select>
 		</div>
 		<div>
-			<label for="quantity">Quantity</label> <select name=""
-				quantity"" id=""quantity"">
+			<label for="quantity">Quantity</label> <select name="quantity"
+				 id="quantity">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">--3--</option>
@@ -77,7 +77,7 @@
 			</select>
 		</div>
 		<div>
-			<input type="submit" name="Add Item">
+			<input type="submit" value="Add Item">
 		</div>
 	</form>
 	<span style="color: red;"> ${message }</span>

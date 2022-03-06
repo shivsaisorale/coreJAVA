@@ -2,7 +2,8 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>groceryapplication</display-name>
   <welcome-file-list>
-    <welcome-file>AddItem.jsp</welcome-file>
+    <welcome-file>LandingPage.jsp</welcome-file>
+    
   </welcome-file-list>
   
   <servlet>
@@ -19,11 +20,19 @@
   
   <servlet-mapping>
   <servlet-name >dispatcherServlet</servlet-name>
-  <url-pattern>/grocery.do</url-pattern>
-  </servlet-mapping>  
-
+  <url-pattern>/LandingPage.do</url-pattern>
+  </servlet-mapping> 
   <servlet-mapping>
   <servlet-name >dispatcherServlet</servlet-name>
-  <url-pattern>/groceryapplication.do</url-pattern>
+  <url-pattern>/addItem.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name >dispatcherServlet</servlet-name>
+  <url-pattern>/addItemResult.do</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet-mapping>
+  <servlet-name >dispatcherServlet</servlet-name>
+  <url-pattern>/search.do</url-pattern>
   </servlet-mapping>  
 </web-app>

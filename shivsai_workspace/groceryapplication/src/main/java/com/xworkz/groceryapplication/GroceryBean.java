@@ -1,11 +1,9 @@
 package com.xworkz.groceryapplication;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.xworkz.groceryapplication.dto.GroceryDTO;
 import com.xworkz.groceryapplication.entity.GroceryEntity;
 import com.xworkz.groceryapplication.service.GroceryService;
@@ -20,7 +18,7 @@ public class GroceryBean {
 		System.out.println("shooting on bean");
 	}
 
-	@RequestMapping("/grocery.do")
+	@RequestMapping("addItem.do")
 	public String saveGrocery(GroceryDTO groceryDTO, Model model) {
 		System.out.println("shooting on method");
 		System.out.println(groceryDTO);
@@ -33,9 +31,9 @@ public class GroceryBean {
 			model.addAttribute("message", "Grocery is save");
 		} else {
 			System.out.println("Contact is not saved " + groceryDTO.getName());
-			model.addAttribute("message", "Grocery is save");
+			model.addAttribute("message", "Grocery is not save");
 		}
 		return "/AddItem.jsp";
-		
+
 	}
 }

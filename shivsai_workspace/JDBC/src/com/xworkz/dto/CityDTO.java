@@ -7,7 +7,7 @@ public class CityDTO implements Serializable {
 	private String name;
 	private String population;
 	private String famousFor;
-
+	
 	public CityDTO() {
 		System.out.println("invoked no args const");
 	}

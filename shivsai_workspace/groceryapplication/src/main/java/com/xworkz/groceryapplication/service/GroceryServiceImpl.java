@@ -1,8 +1,10 @@
 package com.xworkz.groceryapplication.service;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.xworkz.groceryapplication.dto.GroceryDTO;
 import com.xworkz.groceryapplication.entity.GroceryEntity;
 import com.xworkz.groceryapplication.repo.GroceryReposetory;
 
@@ -52,11 +54,36 @@ public class GroceryServiceImpl implements GroceryService {
 			System.out.println("invzlide brand");
 			valid = false;
 		}
-		if (valid=true) {
+		if (valid = true) {
 			repo.save(entity);
 		}
 
 		return valid;
 	}
 
+	@Override
+	public GroceryEntity validateAndfindByName(String name) {
+		boolean valid = true;
+		if (name != null && !(name.isEmpty()) && name.length() > 3 && name.length() < 200) {
+			valid = true;
+
+		} else {
+			System.out.println("Invalid name");
+			valid = false;
+		}
+		if (valid) {
+			GroceryEntity entity = this.repo.findByName(name);
+			GroceryDTO dto = new GroceryDTO();
+			BeanUtils.copyProperties(entity, dto);
+//			dto.setName(entity.getName());
+//			dto.setPrice(entity.getPrice());
+//			dto.setType(entity.getType());
+//			dto.setQuantity(entity.getQuantity());
+//		
+			return entity;
+		}
+		return null;
+		
+
+	}
 }

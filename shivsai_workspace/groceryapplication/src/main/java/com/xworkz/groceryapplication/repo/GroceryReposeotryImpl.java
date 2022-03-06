@@ -3,6 +3,7 @@ package com.xworkz.groceryapplication.repo;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceException;
+import javax.persistence.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -30,5 +31,11 @@ public class GroceryReposeotryImpl implements GroceryReposetory {
 			e.printStackTrace();
 		}
 	}
-
+	@Override
+		public GroceryEntity findByName(String name) {
+		EntityManager entityManager=this.entityManagerFactory.createEntityManager();
+		Query query=entityManager.createNamedQuery("findByname");
+				query.setParameter("nm", name);
+		return (GroceryEntity)query.getSingleResult();
+		}
 }
