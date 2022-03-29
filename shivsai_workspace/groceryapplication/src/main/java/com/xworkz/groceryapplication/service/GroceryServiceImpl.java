@@ -1,6 +1,8 @@
 package com.xworkz.groceryapplication.service;
 
-import org.springframework.beans.BeanUtils;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,7 +26,7 @@ public class GroceryServiceImpl implements GroceryService {
 			valid = true;
 			System.out.println(entity.getName());
 		} else {
-			System.out.println("invzlide name");
+			System.out.println("invalid name");
 			valid = false;
 		}
 		if (entity.getQuantity() != 0) {
@@ -59,31 +61,80 @@ public class GroceryServiceImpl implements GroceryService {
 		}
 
 		return valid;
+
+	}
+
+	public GroceryDTO validateAndfindbyName(String name) {
+		boolean valid = false;
+		if (name == null || name.isEmpty() == true || name.length() < 3 || name.length() > 20) {
+			valid = false;
+			System.out.println("Invalid name");
+		} else {
+			valid = true;
+			System.out.println("Valid name");
+		}
+		if (valid = true) {
+			GroceryEntity entity = this.repo.findByName(name);
+			GroceryDTO dto = new GroceryDTO();
+			dto.setName(entity.getName());
+			dto.setQuantity(entity.getQuantity());
+			dto.setPrice(entity.getPrice());
+			dto.setType(entity.getType());
+			dto.setBrand(entity.getBrand());
+
+			return dto;
+		}
+		return GroceryService.super.validateAndfindByName(name);
+	}
+
+	public GroceryDTO validateAndUpdatebyName(String name, String newBrand) {
+		boolean valid = false;
+		if (name == null || name.isEmpty() == true || name.length() < 3 || name.length() > 20) {
+			valid = false;
+			System.out.println("Invalid name");
+		} else {
+			valid = true;
+			System.out.println("Valid name");
+		}
+		if (newBrand == null || newBrand.isEmpty() == true) {
+			valid = false;
+			System.out.println("Invalid Brand");
+		} else {
+			valid = true;
+			System.out.println("Valid Brand");
+		}
+		if (valid = true) {
+			GroceryEntity entity = this.repo.findByName(name);
+			GroceryDTO dto = new GroceryDTO();
+			dto.setName(entity.getName());
+			dto.setQuantity(entity.getQuantity());
+			dto.setPrice(entity.getPrice());
+			dto.setType(entity.getType());
+			dto.setBrand(entity.getBrand());
+
+			return dto;
+		}
+		return GroceryService.super.validateAndUpdatebyName(name, newBrand);
 	}
 
 	@Override
-	public GroceryEntity validateAndfindByName(String name) {
-		boolean valid = true;
-		if (name != null && !(name.isEmpty()) && name.length() > 3 && name.length() < 200) {
-			valid = true;
+	public boolean validateAndDelete(String name) {
+		System.out.println("invoked validateAndDelete() ");
+		boolean result = this.repo.deleteByName(name);
+		return result;
 
-		} else {
-			System.out.println("Invalid name");
-			valid = false;
+	}
+
+	@Override
+	public List<Object> getAllGrocery() {
+		System.out.println("invoked validateAndDelete() ");
+		List<Object> groceryContainer = null;
+		List<GroceryEntity> groceryEntityContainer = this.repo.getAll();
+		if (groceryEntityContainer != null) {
+			return groceryContainer = new ArrayList<Object>(groceryEntityContainer);
+
 		}
-		if (valid) {
-			GroceryEntity entity = this.repo.findByName(name);
-			GroceryDTO dto = new GroceryDTO();
-			BeanUtils.copyProperties(entity, dto);
-//			dto.setName(entity.getName());
-//			dto.setPrice(entity.getPrice());
-//			dto.setType(entity.getType());
-//			dto.setQuantity(entity.getQuantity());
-//		
-			return entity;
-		}
-		return null;
-		
+		return groceryContainer;
 
 	}
 }

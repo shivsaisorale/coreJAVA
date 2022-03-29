@@ -12,11 +12,26 @@
 	<h1>Grocery Application</h1>
 
 	<h2>Added Grocery Below Are details</h2>
-	<form action="addItemResult.do" method="post">
-		<span style="color: red;"> ${message }</span> 
+	
+	
+	<form action="addItem.do" method="post">
+		
+	
+	<label>Name :</label> ${grocery.name} <br>
+	<label>Quantity :</label> ${grocery.quantity} <br>
+	<label>Price :</label>${grocery.price} <br>
+	<label>Type :</label> ${grocery.type} <br>
+	<label>Brand :</label> ${grocery.brand}	<br>	
+	<label>Total :</label> ${messageTotalPrice}<br><br>
+		
 		<a href="AddItem.jsp">Add another Item</a>
-			<br> 
-		<a href="LandingPage.jsp">Go Home</a>
+		
+		<br>	
+	
+		<a href="LandingPage.jsp">Go Home</a><br> 
+		<span style="color: red;"> ${message }</span> 
+		
+			
 	</form>
 
 

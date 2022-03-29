@@ -27,6 +27,7 @@ public class GroceryEntity {
 	private String type;
 	@Column(name = "g_brand")
 	private String brand;
+	
 
 	public GroceryEntity() {
 		System.out.println("shooting on grocery");

@@ -7,10 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1 align="center">Search Product</h1>
+	<h1 align="center">Search Grocery</h1>
 	<form action="LandingPage.do" method="post">
-		<a href="AddItem.jsp">Add Item</a> <br> <a
-			href="GrocerySearch.jsp">Grocery Search</a>
+		<a href="AddItem.jsp">Add Item</a> <br> 
+			<a href="GrocerySearch.jsp">Grocery Search</a> <br>
+			<a href="UpdateItem.jsp">Up date</a>
 	</form>
 
 

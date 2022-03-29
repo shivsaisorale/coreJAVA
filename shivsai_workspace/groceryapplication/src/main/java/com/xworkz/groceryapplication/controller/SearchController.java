@@ -1,4 +1,4 @@
-package com.xworkz.groceryapplication.search;
+package com.xworkz.groceryapplication.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,19 +12,27 @@ import com.xworkz.groceryapplication.service.GroceryService;
 
 @Controller
 @RequestMapping("/")
-public class GrocerySearchController {
+public class SearchController {
 
 	@Autowired
 	private GroceryService service;
 
-	public GrocerySearchController() {
-		System.out.println("shooting on controller");
+	public SearchController() {
+		System.out.println("shooting on GrocerySearchController");
 	}
 
-	@RequestMapping("search.do")
-	public String onSearch(@RequestParam String name,Model model) {
-		model.addAttribute("grocery","name");
+	@RequestMapping("/search.do")
+	public String onSearch(@RequestParam String name, Model model) {
+		System.out.println("shooting on onSearch method");
+
 		GroceryDTO dto = this.service.validateAndfindByName(name);
+
+		if (dto != null) {
+			model.addAttribute("grocery", dto);
+			System.out.println(dto.toString());
+		} else {
+			model.addAttribute("grocery", "grocery is not found");
+		}
 		return "/GrocerySearch.jsp";
 
 	}

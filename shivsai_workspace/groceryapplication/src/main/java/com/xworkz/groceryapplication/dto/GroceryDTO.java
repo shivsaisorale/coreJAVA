@@ -1,13 +1,13 @@
 package com.xworkz.groceryapplication.dto;
 
-import javax.persistence.Entity;
+
 
 import lombok.Data;
-import lombok.Getter;
+
 import lombok.NoArgsConstructor;
-@Entity
+
 @Data
-@Getter
+
 @NoArgsConstructor
 public class GroceryDTO {
 
@@ -16,6 +16,16 @@ public class GroceryDTO {
 	private	float price;
 	private	String type;
 	private	String brand;
+	
+	
+	public GroceryDTO(String name, int quantity, float price, String type, String brand) {
+		super();
+		this.name = name;
+		this.quantity = quantity;
+		this.price = price;
+		this.type = type;
+		this.brand = brand;
+	}
 	 
 	
  

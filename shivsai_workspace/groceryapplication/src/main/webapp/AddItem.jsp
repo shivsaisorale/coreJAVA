@@ -80,8 +80,8 @@
 			<input type="submit" value="Add Item">
 		</div>
 	</form>
-	<span style="color: red;"> ${message }</span>
+	<span style="color: red;"> ${message}</span>
 	
-	<a href="AddItemResult.jsp">Add another Item</a>
+	<a href="AddItem.jsp">Add another Item</a>
 </body>
 </html>
