@@ -15,9 +15,9 @@ public interface LaptopService {
 		return null;
 	}
 
-	default LaptopDTO UpdateByNameLaptopDTO(String laptopName, String laptopBrand, String laptopColor, double laptopPrice, double laptopRAM, double laptopROM
-		) {
-			return null;
+	default LaptopDTO UpdateByNameLaptopDTO(String name, String brand, String color, float price, int ram, int rom,
+			String hardDisk) {
+		return null;
 	}
 
 	boolean DeleteLaptopDTO(String name);

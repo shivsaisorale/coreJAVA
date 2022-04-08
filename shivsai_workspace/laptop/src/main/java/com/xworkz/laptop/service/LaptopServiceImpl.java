@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -20,10 +21,13 @@ import com.xworkz.laptop.exception.InvalidlaptopNameException;
 @Service
 public class LaptopServiceImpl implements LaptopService {
 
-	private LaptopDAO laptopDAO;
+	@Autowired
+	private LaptopDAO dao;
 
-	public LaptopServiceImpl(LaptopDAO laptopDAO) {
-		this.laptopDAO = laptopDAO;
+	public LaptopServiceImpl(LaptopDAO dao) {
+		this.dao = dao;
+		System.out.println(this.getClass().getSimpleName() + "bean created");
+		System.out.println("invoked service method");
 	}
 
 	@Override
@@ -58,7 +62,7 @@ public class LaptopServiceImpl implements LaptopService {
 			InvalideLaptopColor invalidColor = new InvalideLaptopColor("Invalid Laptop Color");
 			throw invalidColor;
 		}
-
+		
 		if (dto.getLaptopPrice() != 0) {
 			System.out.println("valid Laptop Price");
 			temp = true;
@@ -93,16 +97,17 @@ public class LaptopServiceImpl implements LaptopService {
 		LaptopEntity entity = new LaptopEntity();
 		BeanUtils.copyProperties(laptopDTO, entity);
 
-		boolean isEntitySaved = laptopDAO.saveLaptopEntity(laptopDTO);
+		boolean isEntitySaved = dao.saveLaptopEntity(laptopDTO);
 		return isEntitySaved;
 	}
-
+	
+	
 	@Override
 	public LaptopDTO findByNameLaptopDTO(String name) {
 		System.out.println("invoked findByNameLaptopDTO");
-		LaptopEntity entity = this.laptopDAO.findByName(name);
+		LaptopEntity entity = this.dao.findByName(name);
 
-		LaptopDTO dto = new LaptopDTO();
+		LaptopDTO dto=new LaptopDTO();
 		BeanUtils.copyProperties(entity, dto);
 
 		return LaptopService.super.findByNameLaptopDTO(name);
@@ -111,7 +116,7 @@ public class LaptopServiceImpl implements LaptopService {
 	@Override
 	public boolean DeleteLaptopDTO(String name) {
 		System.out.println("invoked DeleteLaptopDTO() ");
-		boolean result = this.laptopDAO.deleteByName(name);
+		boolean result = this.dao.deleteByName(name);
 		return result;
 	}
 
@@ -119,17 +124,20 @@ public class LaptopServiceImpl implements LaptopService {
 	public List<Object> getAllLaptopDTO() {
 		System.out.println("invoked getAllLaptopDTO() ");
 		List<Object> laptopContainer = null;
-		List<LaptopEntity> laptopEntityContainer = this.laptopDAO.getAll();
+		List<LaptopEntity> laptopEntityContainer = this.dao.getAll();
 		if (laptopEntityContainer != null) {
 			return laptopContainer = new ArrayList<Object>(laptopEntityContainer);
 		}
 		return laptopContainer;
 	}
-
+	
 	@Override
-	public LaptopDTO UpdateByNameLaptopDTO(String laptopName, String laptopBrand, String laptopColor, double laptopPrice, double laptopRAM, double laptopROM) {
-
-		return LaptopService.super.UpdateByNameLaptopDTO(laptopName, laptopBrand, laptopColor, laptopPrice, laptopRAM, laptopROM);
+	public LaptopDTO UpdateByNameLaptopDTO(String name, String brand, String color, float price, int ram, int rom,
+			String hardDisk) {
+		System.out.println("invoked UpdateByNameLaptopDTO() ");
+		LaptopEntity entity = new LaptopEntity();
+		this.dao.upadteByName(entity);	
+		return LaptopService.super.UpdateByNameLaptopDTO(name, brand, color, price, ram, rom, hardDisk);
 	}
 
 }

@@ -16,7 +16,6 @@ public interface GroceryReposetory {
 	}
 
 	List<GroceryEntity> getAll();
-
 	boolean deleteByName(String name);
 
 }
